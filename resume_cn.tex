@@ -13,29 +13,49 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{张哲愚}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{curtank2@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 151-2273-1896} \ 
+  }
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{南开大学}, 天津}{2014 -- 2018}
+\textit{学士}\ 软件工程专业
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{图森未来}  北京}{2017年10月 -- 至今}
+\role{实习} {}
+自研自动驾驶通信中间件开发
 \begin{itemize}
-  \item 实现了 xxx 特性
+  \item 参与公司自研通信中间件的开发，基于protobuf开发了自动驾驶系统的消息格式
+  \item 在此基础上，开发了消息的存储和读取模块，支持不同版本的消息兼容，提交了多个性能改进
+\end{itemize}
+\role{}{}
+自动驾驶系统框架开发
+\begin{itemize}
+  \item 基于公司内部的自研通信中间件，开发了一整套自动驾驶系统框架，定义了节点的生命周期，节点的状态管理，节点的消息处理等模块，提供了一整套完整的节点开发和管理的解决方案
+  \item 该框架通过合适的抽象，使得节点的开发者可以专注于节点的业务逻辑，不需要处理节点的生命周期和消息处理，可以使用纯函数式编程的方式，提高了节点的可测试性
+  \item 该框架在RPC模式下使用capnp作为消息格式，实现了消息的零拷贝，提高了消息的传输效率
+
+\end{itemize}
+
+\role{实习}{经理: 高富帅}
+基于QNX系统的自动驾驶系统框架开发
+\begin{itemize}
+  \item 在Nvidia Orin SoC上开发了一整套自动驾驶系统框架，包括了通信中间件，节点框架，节点管理等
+  \item 节点框架实现跨平台编译，一套代码可以在linux和QNX上编译运行
+  \item 节点框架和通信中间件通过了AutoSar c++11标准
+\end{itemize}
+
+自动驾驶系统集成测试平台
+\begin{itemize}
+  \item 基于新的自动驾驶系统框架，开发了一套可复现的确定性的自动驾驶系统集成测试工具，
   \item 后台资源占用率减少8\%
   \item xxx
 \end{itemize}
-
 \datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
 \role{Golang, Linux}{个人项目，和富帅糕合作开发}
 \begin{onehalfspacing}
